@@ -1,0 +1,563 @@
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/source-code-pro-v21-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/source-code-pro-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/source-code-pro-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/source-code-pro-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/source-code-pro-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/source-code-pro-v21-latin-regular.svg#SourceCodePro') format('svg'); /* Legacy iOS */
+}
+
+
+@font-face { font-family: cocogoose-regular;
+       src: url('fonts/Cocogoose Pro-trial.ttf'); }
+
+@font-face { font-family: cocogoose-semi-light;
+       src: url('fonts/Cocogoose Pro Semilight-trial.ttf'); }
+
+@font-face { font-family: cocogoose-light;
+       src: url('fonts/Cocogoose Pro Ultralight-trial.ttf'); }
+
+@media only screen and (min-width: 1000px) and (max-width: 1500px) {
+  .typewriter {
+    margin-right: 130px;
+  }
+}
+
+
+
+#rectangle{
+    width:45.75vw;
+    height:175px;
+    background:#FFC934;
+    float: right;
+    margin-top: -215px;
+    margin-right: 61px;
+    position: absolute;
+}
+
+.overlay .title{
+  margin-top: 75px;
+  font-family: cocogoose-semi-light;
+  font-size: 25px;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+}
+
+.link-list a {
+  font-family: Gill Sans;
+  font-size: 20px;
+  padding: 10px;
+  color: inherit; /* blue colors for links too */
+  cursor: url("data:image/svg+xml,%3c%3fxml version='1.0' encoding='UTF-8'%3f%3e %3csvg width='23px' height='27px' viewBox='0 0 97 114' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3c!-- Generator: Sketch 64 (93537) - https://sketch.com --%3e%3ctitle%3eGroup%3c/title%3e%3cdesc%3eCreated with Sketch.%3c/desc%3e%3cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e%3cg id='Group' transform='translate(4.000000%2c 4.000000)' fill='%23FFC934'%3e%3cpolygon id='Path-3' points='35.8597963 38.6781964 80.7055618 53 33.4947096 105.371287 25.6054388 87.8753592'%3e%3c/polygon%3e%3cpath d='M30.8051017%2c105.371287 C27.8078445%2c99.6200292 24.6202584%2c93.9076992 21.2423434%2c88.2342966 C17.8644283%2c82.560894 11.2425345%2c71.8193459 1.37666199%2c56.0096522 C-0.892646689%2c51.699996 -0.34120189%2c48.3298739 3.03099638%2c45.8992858 C6.40319465%2c43.4686977 9.77885006%2c44.0241945 13.1579626%2c47.5657763 L27.9509716%2c64.1391192 L27.9509716%2c9.11193606 C27.8654479%2c3.54117043 30.2651178%2c0.755787621 35.1499813%2c0.755787621 C40.0348447%2c0.755787621 42.4772764%2c3.54117043 42.4772764%2c9.11193606 L42.4772764%2c44.1373658' id='Path' stroke='black' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3cpath d='M42.4772764%2c43.4847655 L42.4772764%2c33.8230725 C42.4772764%2c27.1950284 44.9902521%2c23.8810064 50.0162035%2c23.8810064 C55.0421549%2c23.8810064 57.5551306%2c27.1950284 57.5551306%2c33.8230725 L57.5551306%2c49.1644738' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round'%3e%3c/path%3e%3cpath d='M58.0148206%2c49.1153343 L58.0148206%2c39.4536413 C58.0148206%2c32.8255972 60.5277963%2c29.5115752 65.5537477%2c29.5115752 C70.5796991%2c29.5115752 73.0926748%2c32.8255972 73.0926748%2c39.4536413 L73.0926748%2c54.7950426' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round'%3e%3c/path%3e%3cpath d='M73.0148206%2c55.1153343 L73.0148206%2c45.4536413 C73.0148206%2c38.8255972 75.5277963%2c35.5115752 80.5537477%2c35.5115752 C85.5796991%2c35.5115752 88.0926748%2c38.8255972 88.0926748%2c45.4536413 C88.144448%2c56.6108945 88.144448%2c64.3788183 88.0926748%2c68.7574126 C88.0409017%2c73.1360069 85.4060004%2c85.3406316 80.187971%2c105.371287 L30.8051017%2c105.371287' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/svg%3e"), pointer;
+  //cursor: url(pointer.svg);
+}
+
+@media only screen and (max-width: 999px) {
+  .typewriter {
+    margin-top: -40px;
+    margin-right: 100px;
+  }
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.background {
+  position: absolute;
+  width: 100vw;
+  margin-top: 850px;
+  z-index: -10;
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FFC934;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 10s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner .5s infinite ease-in;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
+
+html{
+  cursor: url("data:image/svg+xml,%3c%3fxml version='1.0' encoding='UTF-8'%3f%3e %3csvg width='20px' height='26px' viewBox='0 0 88 114' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3c!-- Generator: Sketch 64 (93537) - https://sketch.com --%3e%3ctitle%3ePath%3c/title%3e%3cdesc%3eCreated with Sketch.%3c/desc%3e%3cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linejoin='round'%3e%3cg id='cursor' transform='translate(4.000000%2c 4.000000)' fill='%23FFC934' fill-rule='nonzero' stroke='black' stroke-width='8'%3e%3cpolygon id='Path' points='0.04676213 0.3605743 10.2007529 105.101245 35.0461789 69.9179108 79.6575608 69.9179108'%3e%3c/polygon%3e%3c/g%3e%3c/g%3e%3c/svg%3e"), pointer;
+  //cursor: url(cursor.svg);
+}
+
+.bold {
+    font-weight: 600;
+    border-bottom: 2px solid currentColor; /* Or whatever color you want */
+    text-decoration: none;
+}
+
+h1 {
+  color: black;
+  font-family: "Source Code Pro", monospace;
+  font-size: 65px;
+  font-weight: 300;
+  margin-top: 350px;
+  margin-left: 140px;
+}
+
+#cursor {
+  border-left: 0.1em solid black;
+  -webkit-animation: blink 0.7s steps(1) infinite;
+          animation: blink 0.7s steps(1) infinite;
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+h2 {
+  font-family: Gill Sans;
+  font-size: 40px;
+  font-weight: normal;
+  margin-top: 7.5px;
+  margin-bottom: 17.5px;
+  margin-left: 61px;
+  margin-right: 51px;
+  font-weight: 580;
+  overflow: auto;
+}
+
+li a {
+  font-family: Gill Sans;
+  font-size: 20px;
+  padding: 15px;
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+  cursor: url("data:image/svg+xml,%3c%3fxml version='1.0' encoding='UTF-8'%3f%3e %3csvg width='23px' height='27px' viewBox='0 0 97 114' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3c!-- Generator: Sketch 64 (93537) - https://sketch.com --%3e%3ctitle%3eGroup%3c/title%3e%3cdesc%3eCreated with Sketch.%3c/desc%3e%3cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e%3cg id='Group' transform='translate(4.000000%2c 4.000000)' fill='%23FFC934'%3e%3cpolygon id='Path-3' points='35.8597963 38.6781964 80.7055618 53 33.4947096 105.371287 25.6054388 87.8753592'%3e%3c/polygon%3e%3cpath d='M30.8051017%2c105.371287 C27.8078445%2c99.6200292 24.6202584%2c93.9076992 21.2423434%2c88.2342966 C17.8644283%2c82.560894 11.2425345%2c71.8193459 1.37666199%2c56.0096522 C-0.892646689%2c51.699996 -0.34120189%2c48.3298739 3.03099638%2c45.8992858 C6.40319465%2c43.4686977 9.77885006%2c44.0241945 13.1579626%2c47.5657763 L27.9509716%2c64.1391192 L27.9509716%2c9.11193606 C27.8654479%2c3.54117043 30.2651178%2c0.755787621 35.1499813%2c0.755787621 C40.0348447%2c0.755787621 42.4772764%2c3.54117043 42.4772764%2c9.11193606 L42.4772764%2c44.1373658' id='Path' stroke='black' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3cpath d='M42.4772764%2c43.4847655 L42.4772764%2c33.8230725 C42.4772764%2c27.1950284 44.9902521%2c23.8810064 50.0162035%2c23.8810064 C55.0421549%2c23.8810064 57.5551306%2c27.1950284 57.5551306%2c33.8230725 L57.5551306%2c49.1644738' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round'%3e%3c/path%3e%3cpath d='M58.0148206%2c49.1153343 L58.0148206%2c39.4536413 C58.0148206%2c32.8255972 60.5277963%2c29.5115752 65.5537477%2c29.5115752 C70.5796991%2c29.5115752 73.0926748%2c32.8255972 73.0926748%2c39.4536413 L73.0926748%2c54.7950426' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round'%3e%3c/path%3e%3cpath d='M73.0148206%2c55.1153343 L73.0148206%2c45.4536413 C73.0148206%2c38.8255972 75.5277963%2c35.5115752 80.5537477%2c35.5115752 C85.5796991%2c35.5115752 88.0926748%2c38.8255972 88.0926748%2c45.4536413 C88.144448%2c56.6108945 88.144448%2c64.3788183 88.0926748%2c68.7574126 C88.0409017%2c73.1360069 85.4060004%2c85.3406316 80.187971%2c105.371287 L30.8051017%2c105.371287' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/svg%3e"), pointer;
+  //cursor: url(pointer.svg);
+}
+
+p {
+  font-family: Cocogoose-regular;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: -5px;
+}
+
+.Header {
+  text-align: left;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+h1 {
+    display: inline-block;
+}
+
+nav {
+  margin-top: -15px;
+  margin-right: 51px;
+  float: right;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: white;
+  margin-top: -15px;
+  margin-right: 43px;
+}
+ul li {
+  display: block;
+  position: relative;
+  float: left;
+  background: #white;
+
+}
+
+li ul { display: none; }
+ul li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #black;
+  transition: color .75s;
+}
+ul li a:hover { background: white; color: #A8A8A8}
+
+
+li:hover > ul {
+  display: block;
+  position: absolute;
+}
+li:hover li {float: none; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+li:hover a { background: white; }
+li:hover li a:hover { background: #FFC934; color: black}
+.main-navigation li ul li { border-top: 0; }
+
+ul ul {
+  margin-left: 20px;
+}
+
+ul ul ul {
+  margin-left: 0px;
+  left: 100%;
+  top: 0;
+   margin-top: 1px;
+}
+
+ul:before,
+ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+ul:after { clear: both; }
+
+.a:hover {
+    cursor: url("data:image/svg+xml,%3c%3fxml version='1.0' encoding='UTF-8'%3f%3e %3csvg width='23px' height='27px' viewBox='0 0 97 114' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3c!-- Generator: Sketch 64 (93537) - https://sketch.com --%3e%3ctitle%3eGroup%3c/title%3e%3cdesc%3eCreated with Sketch.%3c/desc%3e%3cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e%3cg id='Group' transform='translate(4.000000%2c 4.000000)' fill='%23FFC934'%3e%3cpolygon id='Path-3' points='35.8597963 38.6781964 80.7055618 53 33.4947096 105.371287 25.6054388 87.8753592'%3e%3c/polygon%3e%3cpath d='M30.8051017%2c105.371287 C27.8078445%2c99.6200292 24.6202584%2c93.9076992 21.2423434%2c88.2342966 C17.8644283%2c82.560894 11.2425345%2c71.8193459 1.37666199%2c56.0096522 C-0.892646689%2c51.699996 -0.34120189%2c48.3298739 3.03099638%2c45.8992858 C6.40319465%2c43.4686977 9.77885006%2c44.0241945 13.1579626%2c47.5657763 L27.9509716%2c64.1391192 L27.9509716%2c9.11193606 C27.8654479%2c3.54117043 30.2651178%2c0.755787621 35.1499813%2c0.755787621 C40.0348447%2c0.755787621 42.4772764%2c3.54117043 42.4772764%2c9.11193606 L42.4772764%2c44.1373658' id='Path' stroke='black' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3cpath d='M42.4772764%2c43.4847655 L42.4772764%2c33.8230725 C42.4772764%2c27.1950284 44.9902521%2c23.8810064 50.0162035%2c23.8810064 C55.0421549%2c23.8810064 57.5551306%2c27.1950284 57.5551306%2c33.8230725 L57.5551306%2c49.1644738' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round'%3e%3c/path%3e%3cpath d='M58.0148206%2c49.1153343 L58.0148206%2c39.4536413 C58.0148206%2c32.8255972 60.5277963%2c29.5115752 65.5537477%2c29.5115752 C70.5796991%2c29.5115752 73.0926748%2c32.8255972 73.0926748%2c39.4536413 L73.0926748%2c54.7950426' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round'%3e%3c/path%3e%3cpath d='M73.0148206%2c55.1153343 L73.0148206%2c45.4536413 C73.0148206%2c38.8255972 75.5277963%2c35.5115752 80.5537477%2c35.5115752 C85.5796991%2c35.5115752 88.0926748%2c38.8255972 88.0926748%2c45.4536413 C88.144448%2c56.6108945 88.144448%2c64.3788183 88.0926748%2c68.7574126 C88.0409017%2c73.1360069 85.4060004%2c85.3406316 80.187971%2c105.371287 L30.8051017%2c105.371287' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/svg%3e"), pointer;
+  }
+
+  .single{
+    display: inline-block;
+  }
+
+  .single :hover {
+      cursor: url("data:image/svg+xml,%3c%3fxml version='1.0' encoding='UTF-8'%3f%3e %3csvg width='23px' height='27px' viewBox='0 0 97 114' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3c!-- Generator: Sketch 64 (93537) - https://sketch.com --%3e%3ctitle%3eGroup%3c/title%3e%3cdesc%3eCreated with Sketch.%3c/desc%3e%3cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e%3cg id='Group' transform='translate(4.000000%2c 4.000000)' fill='%23FFC934'%3e%3cpolygon id='Path-3' points='35.8597963 38.6781964 80.7055618 53 33.4947096 105.371287 25.6054388 87.8753592'%3e%3c/polygon%3e%3cpath d='M30.8051017%2c105.371287 C27.8078445%2c99.6200292 24.6202584%2c93.9076992 21.2423434%2c88.2342966 C17.8644283%2c82.560894 11.2425345%2c71.8193459 1.37666199%2c56.0096522 C-0.892646689%2c51.699996 -0.34120189%2c48.3298739 3.03099638%2c45.8992858 C6.40319465%2c43.4686977 9.77885006%2c44.0241945 13.1579626%2c47.5657763 L27.9509716%2c64.1391192 L27.9509716%2c9.11193606 C27.8654479%2c3.54117043 30.2651178%2c0.755787621 35.1499813%2c0.755787621 C40.0348447%2c0.755787621 42.4772764%2c3.54117043 42.4772764%2c9.11193606 L42.4772764%2c44.1373658' id='Path' stroke='black' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3cpath d='M42.4772764%2c43.4847655 L42.4772764%2c33.8230725 C42.4772764%2c27.1950284 44.9902521%2c23.8810064 50.0162035%2c23.8810064 C55.0421549%2c23.8810064 57.5551306%2c27.1950284 57.5551306%2c33.8230725 L57.5551306%2c49.1644738' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round'%3e%3c/path%3e%3cpath d='M58.0148206%2c49.1153343 L58.0148206%2c39.4536413 C58.0148206%2c32.8255972 60.5277963%2c29.5115752 65.5537477%2c29.5115752 C70.5796991%2c29.5115752 73.0926748%2c32.8255972 73.0926748%2c39.4536413 L73.0926748%2c54.7950426' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round'%3e%3c/path%3e%3cpath d='M73.0148206%2c55.1153343 L73.0148206%2c45.4536413 C73.0148206%2c38.8255972 75.5277963%2c35.5115752 80.5537477%2c35.5115752 C85.5796991%2c35.5115752 88.0926748%2c38.8255972 88.0926748%2c45.4536413 C88.144448%2c56.6108945 88.144448%2c64.3788183 88.0926748%2c68.7574126 C88.0409017%2c73.1360069 85.4060004%2c85.3406316 80.187971%2c105.371287 L30.8051017%2c105.371287' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/svg%3e"), pointer;
+    }
+
+
+
+    #ninja-slider {
+        width:100%;
+        padding: 40px 0;
+
+        margin:0 auto;
+        overflow:hidden;
+        box-sizing:border-box;
+    }
+
+
+
+    #ninja-slider .fs-icon {
+        top:6px;
+        right:6px;
+        width:60px;
+        height:26px;
+        background: rgba(0,0,0,0.2);
+        z-index:2;
+        color:white;
+        text-align:center;
+        font:bold 11px/26px arial;
+        border:1px solid rgba(255,255,255,0.3);
+        border-radius:2px;
+        opacity:0;
+        -webkit-transition:opacity 0.8s;
+        transition:opacity 0.8s;
+    }
+
+    #ninja-slider .slider-inner {
+        width:600px;
+        margin:0 auto;/*center-aligned */
+        font-size:0px;
+        position:relative;
+        box-sizing:border-box;
+    }
+
+    #ninja-slider.fullscreen .slider-inner {
+        width:100%;
+        max-width:800px;
+    }
+
+    #ninja-slider li {
+        width:100%;
+        height:75%;
+        top:0;
+        left:0;
+        position: absolute;
+        font-size:12px;
+        list-style:none;
+        margin-top: 2.5%;
+        margin-left:-2%;
+        padding:0;
+        opacity:0;
+        overflow:hidden;
+        box-sizing:border-box;
+    }
+
+
+
+    #ninja-slider li.ns-show {
+        opacity:1;
+    }
+
+
+
+    /* --------- slider image ------- */
+    #ninja-slider .ns-img {
+        background-color:rgba(0,0,0,0.3);
+        background-size:contain;/*Note: If transitionType is zoom, it will be overridden to cover.*/
+
+        /*decorate border*/
+
+        cursor:default;
+        display:block;
+        position: absolute;
+        width:100%;
+        height:100%;
+        background-repeat:no-repeat;
+        background-position:center center;
+    }
+
+    #ninja-slider .ns-img:hover {
+      cursor: url("data:image/svg+xml,%3c%3fxml version='1.0' encoding='UTF-8'%3f%3e %3csvg width='23px' height='27px' viewBox='0 0 97 114' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3c!-- Generator: Sketch 64 (93537) - https://sketch.com --%3e%3ctitle%3eGroup%3c/title%3e%3cdesc%3eCreated with Sketch.%3c/desc%3e%3cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e%3cg id='Group' transform='translate(4.000000%2c 4.000000)' fill='%23FFC934'%3e%3cpolygon id='Path-3' points='35.8597963 38.6781964 80.7055618 53 33.4947096 105.371287 25.6054388 87.8753592'%3e%3c/polygon%3e%3cpath d='M30.8051017%2c105.371287 C27.8078445%2c99.6200292 24.6202584%2c93.9076992 21.2423434%2c88.2342966 C17.8644283%2c82.560894 11.2425345%2c71.8193459 1.37666199%2c56.0096522 C-0.892646689%2c51.699996 -0.34120189%2c48.3298739 3.03099638%2c45.8992858 C6.40319465%2c43.4686977 9.77885006%2c44.0241945 13.1579626%2c47.5657763 L27.9509716%2c64.1391192 L27.9509716%2c9.11193606 C27.8654479%2c3.54117043 30.2651178%2c0.755787621 35.1499813%2c0.755787621 C40.0348447%2c0.755787621 42.4772764%2c3.54117043 42.4772764%2c9.11193606 L42.4772764%2c44.1373658' id='Path' stroke='black' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3cpath d='M42.4772764%2c43.4847655 L42.4772764%2c33.8230725 C42.4772764%2c27.1950284 44.9902521%2c23.8810064 50.0162035%2c23.8810064 C55.0421549%2c23.8810064 57.5551306%2c27.1950284 57.5551306%2c33.8230725 L57.5551306%2c49.1644738' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round'%3e%3c/path%3e%3cpath d='M58.0148206%2c49.1153343 L58.0148206%2c39.4536413 C58.0148206%2c32.8255972 60.5277963%2c29.5115752 65.5537477%2c29.5115752 C70.5796991%2c29.5115752 73.0926748%2c32.8255972 73.0926748%2c39.4536413 L73.0926748%2c54.7950426' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round'%3e%3c/path%3e%3cpath d='M73.0148206%2c55.1153343 L73.0148206%2c45.4536413 C73.0148206%2c38.8255972 75.5277963%2c35.5115752 80.5537477%2c35.5115752 C85.5796991%2c35.5115752 88.0926748%2c38.8255972 88.0926748%2c45.4536413 C88.144448%2c56.6108945 88.144448%2c64.3788183 88.0926748%2c68.7574126 C88.0409017%2c73.1360069 85.4060004%2c85.3406316 80.187971%2c105.371287 L30.8051017%2c105.371287' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/svg%3e"), pointer;
+      //cursor: url(pointer.svg);
+    }
+
+
+
+    /*---------- Captions -------------------*/
+    #ninja-slider .caption {
+        opacity: 100;
+        padding:20px 40px;
+        margin:auto;
+        left:0;right:0;
+        top:auto;bottom:0px;
+        width:auto;
+        text-align:right;
+        font-family:sans-serif;
+        font-size:11px;
+        color:rgba(255,255,255,0.2);
+        background:none;
+        position:absolute;
+        box-sizing:border-box;
+    }
+    #ninja-slider li .cap1 {
+        color:rgba(255,255,255,0.5);
+        font:bold 32px arial;
+        text-align:center;
+        opacity:1;
+        bottom:40%;
+        -webkit-transition:bottom 1.3s, opacity 1s;
+        transition:bottom 1.3s, opacity 1s;
+    }
+
+    /*The cap1 of the current slide */
+    #ninja-slider li[class*='-'] .cap1 {
+        opacity:1;
+        bottom:20%;
+    }
+    #ninja-slider li .cap2 {
+        color:rgba(255, 162, 0, 0.5);
+        font-size:23px;
+        bottom:15%;
+        -webkit-transition-delay: 1s;
+        transition-delay: 1s;
+    }
+
+    /*The cap2 of the current slide */
+    #ninja-slider li[class*='-s'] .cap2 {
+        bottom:10%;
+    }
+
+
+    /* ---------Arrow buttons ------- */
+    /* The arrow button id should be: slider id + ("-prev", "-next", and "-pause-play") */
+    #ninja-slider-pause-play { display:none;}
+
+    #ninja-slider-prev, #ninja-slider-next
+    {
+        position: absolute;
+        display:inline-block;
+        width:42px;
+        height:56px;
+        line-height:56px;
+        top: 50%;
+        margin-top:-51px;/*pager's height should also be counted*/
+        background-color:rgba(0,0,0,0.4);
+        background-color:#ccc\9;/*IE8 hack*/
+        backface-visibility:hidden;
+        color:white;
+        overflow:hidden;
+        white-space:nowrap;
+        -webkit-user-select: none;
+        user-select:none;
+        border-radius:2px;
+        z-index:10;
+        opacity:0.3;
+        font-family:sans-serif;
+        font-size:13px;
+        cursor:pointer;
+        -webkit-transition:all 0.7s;
+        transition:all 0.7s;
+    }
+
+    .slider-inner:hover #ninja-slider-prev, .slider-inner:hover #ninja-slider-next {
+        opacity:1;
+        cursor: url("data:image/svg+xml,%3c%3fxml version='1.0' encoding='UTF-8'%3f%3e %3csvg width='23px' height='27px' viewBox='0 0 97 114' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3c!-- Generator: Sketch 64 (93537) - https://sketch.com --%3e%3ctitle%3eGroup%3c/title%3e%3cdesc%3eCreated with Sketch.%3c/desc%3e%3cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e%3cg id='Group' transform='translate(4.000000%2c 4.000000)' fill='%23FFC934'%3e%3cpolygon id='Path-3' points='35.8597963 38.6781964 80.7055618 53 33.4947096 105.371287 25.6054388 87.8753592'%3e%3c/polygon%3e%3cpath d='M30.8051017%2c105.371287 C27.8078445%2c99.6200292 24.6202584%2c93.9076992 21.2423434%2c88.2342966 C17.8644283%2c82.560894 11.2425345%2c71.8193459 1.37666199%2c56.0096522 C-0.892646689%2c51.699996 -0.34120189%2c48.3298739 3.03099638%2c45.8992858 C6.40319465%2c43.4686977 9.77885006%2c44.0241945 13.1579626%2c47.5657763 L27.9509716%2c64.1391192 L27.9509716%2c9.11193606 C27.8654479%2c3.54117043 30.2651178%2c0.755787621 35.1499813%2c0.755787621 C40.0348447%2c0.755787621 42.4772764%2c3.54117043 42.4772764%2c9.11193606 L42.4772764%2c44.1373658' id='Path' stroke='black' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3cpath d='M42.4772764%2c43.4847655 L42.4772764%2c33.8230725 C42.4772764%2c27.1950284 44.9902521%2c23.8810064 50.0162035%2c23.8810064 C55.0421549%2c23.8810064 57.5551306%2c27.1950284 57.5551306%2c33.8230725 L57.5551306%2c49.1644738' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round'%3e%3c/path%3e%3cpath d='M58.0148206%2c49.1153343 L58.0148206%2c39.4536413 C58.0148206%2c32.8255972 60.5277963%2c29.5115752 65.5537477%2c29.5115752 C70.5796991%2c29.5115752 73.0926748%2c32.8255972 73.0926748%2c39.4536413 L73.0926748%2c54.7950426' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round'%3e%3c/path%3e%3cpath d='M73.0148206%2c55.1153343 L73.0148206%2c45.4536413 C73.0148206%2c38.8255972 75.5277963%2c35.5115752 80.5537477%2c35.5115752 C85.5796991%2c35.5115752 88.0926748%2c38.8255972 88.0926748%2c45.4536413 C88.144448%2c56.6108945 88.144448%2c64.3788183 88.0926748%2c68.7574126 C88.0409017%2c73.1360069 85.4060004%2c85.3406316 80.187971%2c105.371287 L30.8051017%2c105.371287' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/svg%3e"), pointer;
+        //cursor: url(pointer.svg);
+    }
+
+
+    #ninja-slider-prev {
+      top:220px;
+        left: -42px; /*set it with a positive value if .slider-inner does not have max-width setting.*/
+    }
+    #ninja-slider-next {
+      top:220px;
+        right: -38px;
+    }
+
+    /* arrows */
+    #ninja-slider-prev::before, #ninja-slider-next::before {
+        position: absolute;
+        top: 17px;
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-left: 2px solid white;
+        border-top: 2px solid white;
+        backface-visibility:hidden;
+    }
+
+    #ninja-slider-prev::before {
+        -ms-transform:rotate(-45deg);/*IE 9*/
+        -webkit-transform:rotate(-45deg);
+        transform: rotate(-45deg);
+        right:4px;
+    }
+
+    #ninja-slider-next::before {
+        -ms-transform:rotate(135deg);/*IE 9*/
+        -webkit-transform:rotate(135deg);
+        transform: rotate(135deg);
+        left:4px;
+    }
+
+
+    /*pagination num within the arrow buttons*/
+    #ninja-slider-prev div, #ninja-slider-next div {display:none;}
+
+
+    /*------ pager(nav bullets) ------*/
+    /* The pager id should be: slider id + "-pager" */
+    /* #ninja-slider-pager { display:none;}*/
+    #ninja-slider-pager
+    {
+        margin:0 auto; /* center align */
+        text-align:center;
+        display:table;
+        font-size:0;
+    }
+
+    #ninja-slider-pager a
+    {
+        display:inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: #CCC;
+        font-size:0; /* Non-zero will show the index num */
+        margin:2px 6px;
+        cursor:pointer;
+        border-radius:10px;
+    }
+
+    #ninja-slider-pager a:hover
+    {
+        opacity:0.6;
+        cursor: url("data:image/svg+xml,%3c%3fxml version='1.0' encoding='UTF-8'%3f%3e %3csvg width='23px' height='27px' viewBox='0 0 97 114' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3c!-- Generator: Sketch 64 (93537) - https://sketch.com --%3e%3ctitle%3eGroup%3c/title%3e%3cdesc%3eCreated with Sketch.%3c/desc%3e%3cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e%3cg id='Group' transform='translate(4.000000%2c 4.000000)' fill='%23FFC934'%3e%3cpolygon id='Path-3' points='35.8597963 38.6781964 80.7055618 53 33.4947096 105.371287 25.6054388 87.8753592'%3e%3c/polygon%3e%3cpath d='M30.8051017%2c105.371287 C27.8078445%2c99.6200292 24.6202584%2c93.9076992 21.2423434%2c88.2342966 C17.8644283%2c82.560894 11.2425345%2c71.8193459 1.37666199%2c56.0096522 C-0.892646689%2c51.699996 -0.34120189%2c48.3298739 3.03099638%2c45.8992858 C6.40319465%2c43.4686977 9.77885006%2c44.0241945 13.1579626%2c47.5657763 L27.9509716%2c64.1391192 L27.9509716%2c9.11193606 C27.8654479%2c3.54117043 30.2651178%2c0.755787621 35.1499813%2c0.755787621 C40.0348447%2c0.755787621 42.4772764%2c3.54117043 42.4772764%2c9.11193606 L42.4772764%2c44.1373658' id='Path' stroke='black' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3cpath d='M42.4772764%2c43.4847655 L42.4772764%2c33.8230725 C42.4772764%2c27.1950284 44.9902521%2c23.8810064 50.0162035%2c23.8810064 C55.0421549%2c23.8810064 57.5551306%2c27.1950284 57.5551306%2c33.8230725 L57.5551306%2c49.1644738' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round'%3e%3c/path%3e%3cpath d='M58.0148206%2c49.1153343 L58.0148206%2c39.4536413 C58.0148206%2c32.8255972 60.5277963%2c29.5115752 65.5537477%2c29.5115752 C70.5796991%2c29.5115752 73.0926748%2c32.8255972 73.0926748%2c39.4536413 L73.0926748%2c54.7950426' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round'%3e%3c/path%3e%3cpath d='M73.0148206%2c55.1153343 L73.0148206%2c45.4536413 C73.0148206%2c38.8255972 75.5277963%2c35.5115752 80.5537477%2c35.5115752 C85.5796991%2c35.5115752 88.0926748%2c38.8255972 88.0926748%2c45.4536413 C88.144448%2c56.6108945 88.144448%2c64.3788183 88.0926748%2c68.7574126 C88.0409017%2c73.1360069 85.4060004%2c85.3406316 80.187971%2c105.371287 L30.8051017%2c105.371287' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/svg%3e"), pointer;
+        //cursor: url(pointer.svg);
+    }
+    #ninja-slider-pager a.active
+    {
+        background-color: #FFC934;
+    }
+
+
+
+    #ninja-slider-pager, #ninja-slider-prev, #ninja-slider-next, #ninja-slider-pause-play
+    {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+
+    /*Responsive settings*/
+    @media only screen and (max-width:600px){
+
+        #ninja-slider-prev, #ninja-slider-next, #ninja-slider-pager {
+            display:none;
+        }
+
+
+        #ninja-slider li .cap1 {
+            font-size:20px;
+        }
+    }
+
+=
