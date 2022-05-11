@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--
+
+                                                                ,,s,,      ,ss,
+                                                              #########w#########m
+                                                             ###     "@###     "##Q
+                                                            j##b                @##
+                                                             @##               ;##b
+                                                  ,####N,     %##N,          ,###"
+                                                ####b"7###      "###m,    s####"
+                                              ####      5##p       "@######M^
+                                            ;###         @##p          ^`              s#######,
+                                           ###b           @##c                      s####^   7##b
+                                         ]###              @######MNmew,,,,      ;####^       @##
+                                        ###b                #####7%################"           @##
+                             ###N,    ,###                 '@###b  G####b  j####b              j##b
+                              `"%####m###                    ^^    '8##b   ^@##b                @##
+                                   "@####p                                                      '##b
+                         ]###mm,,  @##b7#b        ,ss                                            @##m########
+                          `""%W######Q,         ]#####b                                       ;######b"
+                                 @######        ^#####b      ;#Q  ###p           )####N       7#"  @##
+                                ###               ^"^        7########s###p      ######b        ,,s###########L
+                               ###                            '@##^'@###b        '5###"        8####87###
+                              ###                              '@#####b                               ^@##
+                             ###                                  '^                                    5###
+                            ###                                                                          '@##m
+                           ###                                                                             ^@##p
+                          ###b                                                                               "###p
+                         ]##b                                                                                  7###
+                        ,##b                                                                                    ,@##N
+                        ###                                                                                   .#######p
+                       @##                                                                                    @#########
+                      ]##b                                                                                    8##########c
+                      ###                                                                                      7##########b
+                     ###b                                                                                        "88###"7##N
+                    ,##b                                                                                                ,###b
+                    @##                                                                                               ;######Q
+                    ##b                                                                                              ;########b
+                   @##                                                                                               @######@##
+                   ###                                                                                               '@#########
+                  ]##b                                                                                                 "8#######b
+                  @##                                                                                                         @##
+                  @##                                                                                                         !##b
+                  @##                                                                                                          @##
+                  ###                                                                                                          @##
+                  ###                                                                                                          ]##
+                  ##b                                                                                                          !##b
+                  @##                                                                                                          *##b
+                  @##                                                                                                          G##b
+                  @##                                                                                                          !##b
+                  ]##p                                                                                                         ]##b
+                  '##b                                                                                                         @##
+                   @##                                                                                                         @##
+                   j##b                                                                                                       ]##b
+                    @##p                                                                                                      ###
+                     ##Q                                                                                                     j##b
+                     '##Q                                                                                                   .###
+                      "##Q                                                                                                  @##
+                       '@##p                                                                                               @##
+                         %###p                                                                                 ,smp      .###
+                           %###p                                                                           ,s######p    ;###
+                             "###mp                                                         ,,,,,,,sss##############  s###`
+                               '7@####Q,        @#Q   j##p               ;p    ;Qp      ;#################    8####@####`
+                                   `"@#######Nms@##   j##b              ]##b  '###     @########    j#####b    @@####M
+                                         `""%WW############################Q  ;#################p   *###@@########"
+                                                  `"%%"`````^^^"""""""""""@#####"""""""""##################M""
+                                                                                             ```^^```
+
+	-->
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <script src="jquery-2.0.2.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<title>Kaylyn Ho</title>
+  <style>
+  header {display:block;padding:60px 0 10px;text-align:center;}
+  header a {
+      font-family: sans-serif;
+      font-size: 24px;
+      line-height: 24px;
+      padding: 8px 13px 7px;
+      text-decoration:none;
+      transition: color 0.7s;
+  }
+  header a.active {
+      font-weight:bold;
+      width: 24px;
+      height: 24px;
+      padding: 4px;
+      text-align: center;
+      display:inline-block;
+      border-radius: 50%;
+  }
+		.main{
+			display: inline-block;
+			padding: 0;
+			width: 200px;
+    		height: 200px;
+		}
+		.main img{
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+	<style type="text/css">
+    .container { margin-top: 60vh; width: 90vw; margin-left:5vw;}
+    	.snake{
+				width:500px;
+				height: 500px;
+    		position: relative;
+    		overflow: hidden;
+    	}
+    	.overlay{
+    		position: absolute;
+    		opacity: 0.9;
+
+    		text-align: center;
+    		background-color: #FFC934;
+        color:black;
+    	}
+			.description{
+        font-family: Verdana;
+				display: block;
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+    </style>
+</head>
+<body>
+      <div class="content">
+      	<div class="Header">
+    	<h2>Kaylyn Ho</h2>
+      <div class="background">
+		   <img src="img/backgroundimg.png" width="1800.3" alt="Cover Photo">
+     </div>
+    		<ul class="main-navigation">
+  <li><a href="index.html"><span class="bold">Home</span></a></li>
+  <li><a href="#">Exercises and Projects</a>
+    <ul>
+      <li><a href="exercise-1/just-ascii-about-me.html">Exercise 1</a></li>
+      <li><a href="#">Exercise 2</a>
+        <ul>
+          <li><a href="exercise-2/my-name.html">My Name</a></li>
+          <li><a href="exercise-2/my-ascii.html">My ASCII</a></li>
+          <li><a href="exercise-2/my-background.html">My Background</a></li>
+          <li><a href="exercise-2/design-inspiration.html">Design Inspiration</a></li>
+          <li><a href="exercise-2/non-designed.html">Non Designed</a></li>
+          <li><a href="exercise-2/everyday-object.html">Everyday Object</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Exercise 3</a>
+        <ul>
+          <li><a href="exercise-3/composition-a.html">Composition A 1923</a></li>
+          <li><a href="exercise-3/untitled.html">Untitled 1953</a></li>
+          <li><a href="exercise-3/untitled-composition.html">Untitled Composition 2012</a></li>
+        </ul>
+      </li>
+      <li><a href="project-1/project-1.html">Project 1</a></li>
+      <li><a href="project-2/project-2.html">Project 2</a></li>
+			<li><a href="presentation/presentation.html">Presentation</a></li>
+      <li><a href="index.html">Final</a></li>
+    </ul>
+  </li>
+  <li><a href="About/about.html">About</a></li>
+  <li><a href="https://www.linkedin.com/in/kaylyn-ho-4b95b3160/" target="_blank">Contact</a></li>
+</ul>
+	</div>
+</div>
+
+<!-- partial:index.partial.html -->
+<div class="typewriter">
+  <div id="app"></div>
+</div>
+
+<div class="container">
+<div class="single">
+<a href="exercise-1/just-ascii-about-me.html">
+  <div class="main col-md-4 snake">
+			<div class="overlay"><span class="title">Just ASCII About Me</span><br>
+			<span class="description">Research and create your own ASCII to "brand" future projects.</span></div>
+			<img class="" src="img/img1.png"/>
+	</div>
+  </a>
+</div>
+  	<div class="main col-md-4 snake">
+  			<div class="overlay"><span class="title">Getting to Know U(RL)</span><br>
+  			<span class="description">Create a multi-paged website that would introduce yourself to the class.</span><br>
+        <div class="link-list">
+        <a href="exercise-2/my-name.html">My Name</a><br><br>
+        <a href="exercise-2/my-ascii.html">My ASCII</a><br><br>
+        <a href="exercise-2/my-background.html">My Background</a><br><br>
+        <a href="exercise-2/design-inspiration.html">Design Inspiration</a><br><br>
+        <a href="exercise-2/non-designed.html">Non Designed</a><br><br>
+        <a href="exercise-2/everyday-object.html">Everyday Object</a>
+        </div>
+        </div>
+  			<img class="" src="img/img2.png"/>
+  	</div>
+    <div class="main col-md-4 snake">
+  			<div class="overlay"><span class="title">D for DIV: Art Forgery with CSS</span><br>
+  			<span class="description">Create works of art forgery by having elements of the page change color on hover.</span><br>
+        <div class="link-list">
+        <a href="exercise-3/composition-a.html">Composition A 1923</a><br><br>
+        <a href="exercise-3/untitled.html">Untitled 1953</a><br><br>
+        <a href="exercise-3/untitled-composition.html">Untitled Composition 2012</a>
+        </div>
+        </div>
+  			<img class="" src="img/img3.png"/>
+  	</div>
+    <div class="single">
+      <a href="project-1/project-1.html">
+      	<div class="main col-md-4 snake">
+      			<div class="overlay"><span class="title">Narrative Scrolling</span><br>
+      			<span class="description">Create a single scrolling website that either tells a story or goes through a procedure.</span></div>
+      			<img class="" src="img/img4.png"/>
+      	</div>
+        </a>
+      </div>
+    <div class="single">
+        <a href="project-2/project-2.html">
+        	<div class="main col-md-4 snake">
+        			<div class="overlay"><span class="title">Image Essay Gallery</span><br>
+        			<span class="description">Create an interactive photo gallery that displays a set of images that tells a story or conveys a message.</span></div>
+        			<img class="" src="img/img5.png"/>
+        	</div>
+          </a>
+        </div>
+      <div class="single">
+          <a href="presentation/presentation.html">
+          	<div class="main col-md-4 snake">
+          			<div class="overlay"><span class="title">Presentation</span><br>
+          			<span class="description">Present a concept in HTML/CSS that has not been learned yet in class.</span></div>
+          			<img class="" src="img/img6.png"/>
+          	</div>
+            </a>
+          </div>
+      </div>
+</div>
+<p>Inspiration</p>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+	<a href="https://www.adhamdannaway.com/" target="_blank">
+		<div class="mySlides fade">
+	    <div class="numbertext">1 / 6</div>
+	    <img src="img/ins1.png" style="width:1000px; height: 500px">
+	    <div class="text">Adham Dannaway's Site</div>
+	  </div>
+  </a>
+
+	<a href="https://mypoorbrain.com/" target="_blank">
+	  <div class="mySlides fade">
+	    <div class="numbertext">2 / 6</div>
+	    <img src="img/ins2.png" style="width:1000px; height: 500px">
+	    <div class="text">Tim Smith's Site</div>
+	  </div>
+	</a>
+
+	<a href="https://www.olivier-guilleux.com/" target="_blank">
+	  <div class="mySlides fade">
+	    <div class="numbertext">3 / 6</div>
+	    <img src="img/ins3.png" style="width:1000px; height: 500px">
+	    <div class="text">Oliver Guilleux's Site</div>
+	  </div>
+	</a>
+
+	<a href="https://yasly.com/" target="_blank">
+		<div class="mySlides fade">
+			<div class="numbertext">4 / 6</div>
+			<img src="img/ins4.png" style="width:1000px; height: 500px">
+			<div class="text">Danny Jones' Site</div>
+		</div>
+	</a>
+
+	<a href="https://www.lundqvistdallyn.studio/" target="_blank">
+		<div class="mySlides fade">
+			<div class="numbertext">5 / 6</div>
+			<img src="img/ins5.png" style="width:1000px; height: 500px">
+			<div class="text">Sara Lundqvist and Sam Dallyn's Site</div>
+		</div>
+	</a>
+
+	<a href="https://uxfol.io/maxberger" target="_blank">
+		<div class="mySlides fade">
+			<div class="numbertext">6 / 6</div>
+			<img src="img/ins6.png" style="width:1000px; height: 500px">
+			<div class="text">Max Berger's Site</div>
+		</div>
+	</a>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(4)"></span>
+	<span class="dot" onclick="currentSlide(5)"></span>
+	<span class="dot" onclick="currentSlide(6)"></span>
+	<br><br><br><br>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<script src="snake.min.js">
+</script>
+<script>$(".snake").snakeify({speed: 200});</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/umd/react.development.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.2.0/umd/react-dom.development.js'></script>
+<script src='https://unpkg.com/prop-types/prop-types.min.js'></script><script  src="./script.js"></script>
+<div class="loader-wrapper">
+  <span class="loader"><span class="loader-inner"></span></span>
+</div>
+<script>
+    $(window).on("load",function(){
+      $(".loader-wrapper").fadeOut("slow");
+    });
+</script>
+</body>
+</html>
