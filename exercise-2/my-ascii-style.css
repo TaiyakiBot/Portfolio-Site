@@ -1,0 +1,140 @@
+@font-face { font-family: cocogoose-regular;
+       src: url('../fonts/Cocogoose Pro-trial.ttf'); }
+
+@font-face { font-family: cocogoose-semi-light;
+       src: url('../fonts/Cocogoose Pro Semilight-trial.ttf'); }
+
+.bold {
+    font-weight: 600;
+    border-bottom: 2px solid currentColor; /* Or whatever color you want */
+    text-decoration: none;
+}
+
+html{
+  cursor: url("data:image/svg+xml,%3c%3fxml version='1.0' encoding='UTF-8'%3f%3e %3csvg width='20px' height='26px' viewBox='0 0 88 114' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3c!-- Generator: Sketch 64 (93537) - https://sketch.com --%3e%3ctitle%3ePath%3c/title%3e%3cdesc%3eCreated with Sketch.%3c/desc%3e%3cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linejoin='round'%3e%3cg id='cursor' transform='translate(4.000000%2c 4.000000)' fill='%23FFC934' fill-rule='nonzero' stroke='black' stroke-width='8'%3e%3cpolygon id='Path' points='0.04676213 0.3605743 10.2007529 105.101245 35.0461789 69.9179108 79.6575608 69.9179108'%3e%3c/polygon%3e%3c/g%3e%3c/g%3e%3c/svg%3e"), pointer;
+  //cursor: url(cursor.svg);
+}
+
+h1 {
+  font-family: Gill Sans;
+  font-size: 40px;
+  font-weight: normal;
+  margin-top: 7.5px;
+  margin-bottom: 17.5px;
+  margin-left: 61px;
+  font-weight: 580;
+  display: inline-block;
+}
+
+a {
+  font-family: Gill Sans;
+  font-size: 20px;
+  padding: 15px;
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+  cursor: url("data:image/svg+xml,%3c%3fxml version='1.0' encoding='UTF-8'%3f%3e %3csvg width='23px' height='27px' viewBox='0 0 97 114' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3c!-- Generator: Sketch 64 (93537) - https://sketch.com --%3e%3ctitle%3eGroup%3c/title%3e%3cdesc%3eCreated with Sketch.%3c/desc%3e%3cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e%3cg id='Group' transform='translate(4.000000%2c 4.000000)' fill='%23FFC934'%3e%3cpolygon id='Path-3' points='35.8597963 38.6781964 80.7055618 53 33.4947096 105.371287 25.6054388 87.8753592'%3e%3c/polygon%3e%3cpath d='M30.8051017%2c105.371287 C27.8078445%2c99.6200292 24.6202584%2c93.9076992 21.2423434%2c88.2342966 C17.8644283%2c82.560894 11.2425345%2c71.8193459 1.37666199%2c56.0096522 C-0.892646689%2c51.699996 -0.34120189%2c48.3298739 3.03099638%2c45.8992858 C6.40319465%2c43.4686977 9.77885006%2c44.0241945 13.1579626%2c47.5657763 L27.9509716%2c64.1391192 L27.9509716%2c9.11193606 C27.8654479%2c3.54117043 30.2651178%2c0.755787621 35.1499813%2c0.755787621 C40.0348447%2c0.755787621 42.4772764%2c3.54117043 42.4772764%2c9.11193606 L42.4772764%2c44.1373658' id='Path' stroke='black' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3cpath d='M42.4772764%2c43.4847655 L42.4772764%2c33.8230725 C42.4772764%2c27.1950284 44.9902521%2c23.8810064 50.0162035%2c23.8810064 C55.0421549%2c23.8810064 57.5551306%2c27.1950284 57.5551306%2c33.8230725 L57.5551306%2c49.1644738' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round'%3e%3c/path%3e%3cpath d='M58.0148206%2c49.1153343 L58.0148206%2c39.4536413 C58.0148206%2c32.8255972 60.5277963%2c29.5115752 65.5537477%2c29.5115752 C70.5796991%2c29.5115752 73.0926748%2c32.8255972 73.0926748%2c39.4536413 L73.0926748%2c54.7950426' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round'%3e%3c/path%3e%3cpath d='M73.0148206%2c55.1153343 L73.0148206%2c45.4536413 C73.0148206%2c38.8255972 75.5277963%2c35.5115752 80.5537477%2c35.5115752 C85.5796991%2c35.5115752 88.0926748%2c38.8255972 88.0926748%2c45.4536413 C88.144448%2c56.6108945 88.144448%2c64.3788183 88.0926748%2c68.7574126 C88.0409017%2c73.1360069 85.4060004%2c85.3406316 80.187971%2c105.371287 L30.8051017%2c105.371287' id='Path-2' stroke='black' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/svg%3e"), pointer;
+  //cursor: url(pointer.svg);
+}
+
+p {
+  margin-left: 61px;
+  font-family: Gill Sans;
+  font-size: 20px;
+}
+
+.Header {
+  text-align: left;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+#rectangle{
+    width:45.75vw;
+    height:175px;
+    background:#FFC934;
+    float: right;
+    margin-top: -215px;
+    margin-right: 61px;
+}
+
+h2 {
+  font-family: cocogoose-regular;
+  font-size: 80px;
+  font-weight: 580;
+  margin-top: 34.5px;
+  text-align: center;
+}
+
+
+nav {
+  margin-top: -15px;
+  margin-right: 51px;
+  float: right;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: white;
+  margin-top: -15px;
+  margin-right: 43px;
+}
+ul li {
+  display: block;
+  position: relative;
+  float: left;
+  background: #white;
+}
+
+li ul { display: none; }
+ul li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #black;
+  transition: color .75s;
+}
+ul li a:hover { background: white; color: #A8A8A8}
+
+
+li:hover > ul {
+  display: block;
+  position: absolute;
+}
+li:hover li { float: none; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+li:hover a { background: white; }
+li:hover li a:hover { background: #FFC934; color: black}
+.main-navigation li ul li { border-top: 0; }
+
+ul ul {
+  margin-left: 20px;
+}
+
+ul ul ul {
+  margin-left: 0px;
+  left: 100%;
+  top: 0;
+   margin-top: 1px;
+}
+
+ul:before,
+ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+ul:after { clear: both; }
